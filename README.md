@@ -1,22 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Book List App
+
+A web application for managing your book collection with AI-powered book cover recognition.
+
+## Features
+
+- GitHub authentication
+- Upload book covers
+- AI-powered text extraction from book covers
+- Automatic title and author detection
+- Search functionality
+- Real-time updates
+
+## Tech Stack
+
+- Next.js
+- Supabase (Authentication & Storage)
+- OpenAI Vision API
+- React
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+OPENAI_API_KEY=your_openai_api_key
+```
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## Deployment
+
+This app is optimized for deployment on Vercel. To deploy:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy!
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

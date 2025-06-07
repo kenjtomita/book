@@ -52,6 +52,8 @@ This app is optimized for deployment on Vercel. To deploy:
 4. Deploy!
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS is configured in `tailwind.config.mjs`. Customize colors and fonts by editing the CSS variables in `src/app/globals.css` and extending them in the config.
+
 
 ## Learn More
 
